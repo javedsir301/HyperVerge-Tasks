@@ -41,15 +41,24 @@ const Calculator = () => {
     setHistory([operation, ...history]);
   };
 
+  const clearHistory = () => {
+    setHistory([]);
+  };
+
   const toggleHistory = () => {
     setShowHistory(!showHistory);
   };
 
   return (
     <div className="calculator">
-      <button className="history-button" onClick={toggleHistory}>
-        History
-      </button>
+      <div className="top-buttons">
+        <button className="history-button" onClick={toggleHistory}>
+          History
+        </button>
+        <button className="clear-history-button" onClick={clearHistory}>
+      Clear
+        </button>
+      </div>
       <div className="display">{input || "0"}</div>
       <div className="buttons">
         <button onClick={() => handleButtonClick("AC")}>AC</button>
@@ -78,19 +87,19 @@ const Calculator = () => {
         <button onClick={() => handleButtonClick("=")}>=</button>
       </div>
 
-        {showHistory && (
-          <div className="history">
-            <h3>History</h3>
-            <ul>
-              {history.length === 0 ? (
-                <li>No history</li>
-              ) : (
-                history.map((item, index) => <li key={index}>{item}</li>)
-              )}
-            </ul>
-          </div>
-        )}
-      </div>
+      {showHistory && (
+        <div className="history">
+          <h3>History</h3>
+          <ul>
+            {history.length === 0 ? (
+              <li>No history</li>
+            ) : (
+              history.map((item, index) => <li key={index}>{item}</li>)
+            )}
+          </ul>
+        </div>
+      )}
+    </div>
   );
 };
 

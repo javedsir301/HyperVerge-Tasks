@@ -9,7 +9,7 @@
 
 .history-button {
     justify-content: center;
-    width: 80%;
+    width: 48%;
     height: 45px;
     font-size: 16px;
     text-align: center;
@@ -94,3 +94,24 @@ button:nth-child(4n):hover {
 .history li:last-child {
     border-bottom: none;
 }
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.clear-history-button {
+    display: block;
+    height: 50px;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-left: 60px;
+    
+}
+
+
