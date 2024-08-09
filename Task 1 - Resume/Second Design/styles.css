@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.heading{
+    color: #0c0299;
+}
+.resume {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    width: 35%;
+    background: #f4f4f9;
+    padding: 20px;
+}
+
+.right-column {
+    border-left: 4px solid rgb(157, 157, 160);
+    width: 45%;
+    padding: 20px;
+}
+
+.profile-pic-container {
+    text-align: center;
+    
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(88, 112, 250);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    zoom: 0%;
+}
+
+.contact-info {
+    text-align: justify;
+    vertical-align: middle;
+
+}
+
+
+.contact-info p {
+    vertical-align: text-bottom;
+    margin: 10px;
+    size: 5px;
+    display: inline-block;
+    
+}
+.contact-info a{
+    margin-left: 170px;
+}
+.skill-section {
+    margin-top: 20px;
+}
+
+.skill-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.skill-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-section ul li {
+    background: #7d7be6;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.header {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.header h4{
+    font-size: 1.2em;
+    margin: 5px 0 15px 0;
+    color: #dc4f67;
+}
+
+.job {
+    margin-top: 20px;
+}
+
+.job h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job p {
+    margin: 0;
+    color: #777;
+}
+
+.job ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.job ul li {
+    margin-bottom: 5px;
+}
+
+
+

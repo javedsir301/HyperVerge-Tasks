@@ -1,0 +1,96 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e0e4ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;}
+
+.history-button {
+    justify-content: center;
+    width: 80%;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    padding-bottom: 35px;
+}
+
+.display {
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 50px;
+    padding-right: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #f0f0f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #d0d4ff;
+}
+
+button:active {
+    background-color: #bec1f0;
+}
+
+button:nth-child(4n) {
+    background-color: #e3a8a8;
+}
+
+button:nth-child(4n):hover {
+    background-color: #ff9696;
+}
+
+.history {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.history li:last-child {
+    border-bottom: none;
+}

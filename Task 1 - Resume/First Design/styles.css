@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.resume {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header .lastname {
+    color: #d9534f;
+}
+
+.header .contact {
+    font-size: 1em;
+    color: #777;
+}
+
+.header .contact strong {
+    color: #d9534f;
+}
+
+.header .contact a {
+    color: #777;
+    text-decoration: none;
+}
+
+.profile, .work-experience {
+    margin-bottom: 20px;
+}
+
+.profile h2, .work-experience h2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+    margin: 0 0 10px;
+    margin-top: 35px;
+}
+
+.profile h2::before, .work-experience h2::before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 4px solid #aba4a4;
+    margin-right: 5px;
+    margin-bottom: 11.5px;
+}
+
+.profile p {
+    font-size: 1em;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.work-experience .job {
+    margin-bottom: 20px;
+}
+
+.work-experience .job h3 {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.work-experience .job p {
+    font-size: 1em;
+    color: #777;
+    margin: 0;
+}
+
+.work-experience .job p strong {
+    margin-left: 10px;
+    color: black;
+}
+
+.work-experience .job p span {
+    color: #d9534f;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.work-experience .job ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.work-experience .job ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
