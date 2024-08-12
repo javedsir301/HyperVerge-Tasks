@@ -5,12 +5,19 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
-.heading{
+
+.heading {
     color: #0c0299;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    border-bottom: 2px solid #ddd;
 }
+
 .resume {
     display: flex;
-    max-width: 1200px;
+    flex-wrap: wrap; 
+    max-width: 900px;
     margin: 20px auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,55 +27,60 @@ body {
     width: 35%;
     background: #f4f4f9;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .right-column {
     border-left: 4px solid rgb(157, 157, 160);
-    width: 45%;
+    width: 65%;
     padding: 20px;
+    box-sizing: border-box; 
 }
 
 .profile-pic-container {
     text-align: center;
-    
 }
 
 .profile-pic {
     border-radius: 50%;
-    border-style: solid;
-    border-color: rgb(88, 112, 250);
+    border: 4px solid rgb(88, 112, 250);
     width: 150px;
     height: 150px;
+    object-fit: cover; 
     margin-bottom: 20px;
-    zoom: 0%;
 }
 
 .contact-info {
-    text-align: justify;
-    vertical-align: middle;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
 }
-
 
 .contact-info p {
-    vertical-align: text-bottom;
-    margin: 10px;
-    size: 5px;
-    display: inline-block;
-    
+    margin: 0;
+    font-size: 0.9em; 
 }
-.contact-info a{
-    margin-left: 170px;
+
+.contact-info a {
+    color: black; 
+    text-decoration: none;
 }
+
+.contact-info i{
+    color: #dc4f67;
+}
+
 .skill-section {
     margin-top: 20px;
 }
 
 .skill-section h2 {
+    margin-right: 30px;
     font-size: 1.5em;
     color: #333;
     border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    margin-left: 20px;
 }
 
 .skill-section ul {
@@ -77,10 +89,14 @@ body {
 }
 
 .skill-section ul li {
-    background: #7d7be6;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px 0;
+    display: inline-block;
+    color: rgb(7, 23, 104);
+    padding:5px;
+    border: 2px solid  rgb(132, 161, 172) ;
+    border-radius: 10px;
+    margin: 5px ;
+    background-color  : rgb(137, 159, 169); 
+
 }
 
 .header {
@@ -95,7 +111,7 @@ body {
     color: #333;
 }
 
-.header h4{
+.header h4 {
     font-size: 1.2em;
     margin: 5px 0 15px 0;
     color: #dc4f67;
@@ -113,7 +129,7 @@ body {
 
 .job p {
     margin: 0;
-    color: #777;
+    color: #dc4f67;
 }
 
 .job ul {
@@ -125,6 +141,3 @@ body {
 .job ul li {
     margin-bottom: 5px;
 }
-
-
-
