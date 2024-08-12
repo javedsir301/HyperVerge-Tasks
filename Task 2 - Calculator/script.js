@@ -1,21 +1,35 @@
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
-const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
 
+const evaluateExpression = (expression) => {
+  try {
+    let processedOutput = expression.replace("%", "/100");
+    const result = new Function('return ' + processedOutput)();
+  
+    if (isNaN(result)) {
+      throw new Error("Invalid result");
+    }
+    return result;
+  } catch (error) {
+    return "Error";
+  }
+};
 
 const calculate = (btnValue) => {
   display.focus();
-  if (btnValue === "=" && output !== "") {
-    output = eval(output.replace("%", "/100"));
+
+  if (btnValue === "=") {
+    output = evaluateExpression(output);
   } else if (btnValue === "AC") {
     output = "";
   } else if (btnValue === "DEL") {
-    output = output.toString().slice(0, -1);
+    output = output.slice(0, -1);
   } else {
-    if (output === "" && specialChars.includes(btnValue)) return;
+    if (output === "" && ["%", "*", "/", "-", "+", "="].includes(btnValue)) return;
     output += btnValue;
   }
+
   display.value = output;
 };
 
