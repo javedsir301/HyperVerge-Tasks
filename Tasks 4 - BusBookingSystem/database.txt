@@ -1,0 +1,26 @@
+Create database bus_booking_system
+
+CREATE TABLE Buses (
+    busNumber VARCHAR(20) PRIMARY KEY,
+    from VARCHAR(100),
+    to VARCHAR(100),
+    departureTime DATETIME,
+    seats INT
+);
+
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255)
+);
+
+CREATE TABLE Bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT,
+    busId VARCHAR(20),
+    seatsBooked INT,
+    bookingDate DATETIME,
+    FOREIGN KEY (userId) REFERENCES Users(id),
+    FOREIGN KEY (busId) REFERENCES Buses(busNumber)
+);
